@@ -9,6 +9,8 @@
   --smoke-color: #f5f5f5;
 }
 
+html{scroll-behavior: smooth;}
+
 * {
   margin: auto;
   padding: 0;
@@ -363,7 +365,7 @@ strong {
 
   #check:checked ~ .navbar {
     margin-top: 2.5rem;
-    height: 15.7rem;
+    /*height: 13.7rem;*/
   }
 
   .navbar a {
@@ -372,6 +374,8 @@ strong {
     margin: 1.5rem;
     text-align: center;
   }
+
+
 }
 
 @media (max-width: 650px) {
