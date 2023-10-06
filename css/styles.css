@@ -247,6 +247,7 @@ strong {
   transition: background-color 0.3s ease, padding 0.3s ease;
   overflow: hidden;
   transition: color 0.3s ease, margin 0.3s ease, padding 0.3s ease;
+  line-height: 1.5rem;
 }
 
 .cv:hover {
