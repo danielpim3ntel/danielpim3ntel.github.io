@@ -247,7 +247,6 @@ strong {
   transition: background-color 0.3s ease, padding 0.3s ease;
   overflow: hidden;
   transition: color 0.3s ease, margin 0.3s ease, padding 0.3s ease;
-  line-height: 1.5rem;
 }
 
 .cv:hover {
@@ -388,6 +387,36 @@ strong {
     width: min(90%, 90rem);
   }
 }
+
+@media (max-width: 395.5px) {
+  .cv {
+    line-height: 1.5rem;
+  }
+}
+
+@media (max-width: 370px) {
+  .contact{
+    flex-wrap: wrap;
+  }
+
+  .contact a{
+    margin: 0;
+  }
+
+  .contact .cv {
+    line-height: 3rem;
+    margin: 0 20%;
+    margin-bottom: 6%;
+  }
+
+  .contact .contact-icon i{
+    position: relative;
+    left: 18%;
+  }
+
+
+}
+
 
 /* *** */
 
