@@ -10,9 +10,9 @@ let reCaptchaToken = ''
 // Variable para mostrar los mensajes
 const toastBox = document.getElementById('toast-box')
 
-const successMsg = "<i class='bx bx-check'></i>Correo enviado correctamente!"
-const errorMsg = "<i class='bx bx-x'></i>Error al enviar correo!"
-// let missingCaptcha = `<i class='bx bx-x'></i>Por favor complete el captcha!`;
+const successMsg = "<i class='bx bx-check'></i>¡Correo enviado correctamente!"
+const errorMsg = "<i class='bx bx-x'></i>¡Error al enviar correo!"
+// let missingCaptcha = `<i class='bx bx-x'></i>¡Por favor complete el captcha!`;
 
 // Se obtiene el token del captcha
 // eslint-disable-next-line no-unused-vars
