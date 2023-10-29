@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <title>My portfolio</title>
 </head>
@@ -47,7 +49,7 @@
                         Ingeniero en Sistemas Computacionales</p>
                 </h1>
                 <div class="border"></div>
-                <p class="about">Apasionado con lo que hago, dispuesto siempre a enfrentar nuevos desafíos. 
+                <p class="about">Apasionado con lo que hago, dispuesto siempre a enfrentar nuevos desafíos.
                     Desarrollador web y de aplicaciones de escritorio. ¿Una cualidad mía? <em>Versatilidad.</em></p>
                 <div class="border-end"></div>
                 <div class="contact">
@@ -63,7 +65,8 @@
         <section class="projects" id="projects">
             <h1 class="title">Proyectos
             </h1>
-            <p class="phrase">Aquí algunos de los <strong>proyectos</strong> en los que he <strong>trabajado.</strong></p>
+            <p class="phrase">Aquí algunos de los <strong>proyectos</strong> en los que he <strong>trabajado.</strong>
+            </p>
             <!--<div class="sections">
                 <a class="button" href="#">Descargar CV</a>
                 <a class="button" href="#">Descargar CV</a>
@@ -79,7 +82,8 @@
                                 Fast Fourier Transform Animation
                             </div>
                             <p class="description">
-                                En este proyecto, a través de una animación web, se muestra como resolver multiplicaciones polinomiales bajo el
+                                En este proyecto, a través de una animación web, se muestra como resolver
+                                multiplicaciones polinomiales bajo el
                                 algoritmo de la transformada rápida de Fourier
                             </p>
                             <div class="icons">
@@ -113,7 +117,8 @@
                                 TallerCOM
                             </div>
                             <p class="description">
-                                TallerCom es un sistema informático para la gestión de un taller mecánico dirigido a sus trabajadores
+                                TallerCom es un sistema informático para la gestión de un taller mecánico dirigido a sus
+                                trabajadores
                             </p>
                             <div class="icons">
                                 a
@@ -129,7 +134,9 @@
                                 Cálculo de posición óptima de cámaras de vigilancia
                             </div>
                             <p class="description">
-                                En este proyecto, a través del teorema de la galería de arte, se muestra el posicionamiento de cámaras de seguridad en ciertos escenarios para una vigilancia óptima.
+                                En este proyecto, a través del teorema de la galería de arte, se muestra el
+                                posicionamiento de cámaras de seguridad en ciertos escenarios para una vigilancia
+                                óptima.
 
                             </p>
                             <div class="icons">
@@ -138,7 +145,7 @@
                         </div>
                     </a>
                 </div>
-               
+
 
             </div>
         </section>
@@ -165,17 +172,22 @@
             </h1>
             <p class="phrase"><strong>¿Tienes alguna idea?</strong> Compártela conmigo.</p>
             <div class="contact-form">
-                <form action="https://formsubmit.co/caf874ca963201a9286c692220628b22" method="POST">
-                    <input class="form-field" type="text" placeholder="Nombre" name="name" required>
-                    <input class="form-field" type="email" placeholder="Correo" name="email" required>
-                    <input class="form-field" type="text" placeholder="Asunto" name="_subject" required>
-                    <textarea class="form-field form-text-area" maxlength="366" name="message" placeholder="Mensaje"
+                <form id="contact-form" action="" method="POST">
+                    <input class="form-field" type="text" placeholder="Nombre" id="sender" required>
+                    <input class="form-field" type="email" placeholder="Correo" id="email" required>
+                    <input class="form-field" type="text" placeholder="Asunto" id="subject" required>
+                    <textarea class="form-field form-text-area" maxlength="366" id="message" placeholder="Mensaje"
                         required></textarea>
+                    <div class="g-recaptcha" data-sitekey="6Leyn9IoAAAAAEKAyTVSj-N5HPrsjXYkiQg5jSQO"
+                        data-callback="getCaptcha"></div>
+                        <div id="#g-recaptcha-response"></div>
                     <button class="button-submit" type="submit">Enviar</button>
                 </form>
             </div>
-
+            <div id="toast-box">
+            </div>
         </section>
+
 
     </main>
 
@@ -186,7 +198,7 @@
         </p>
     </div>
 </body>
-<script src="js/animation.js"></script>
-
+<script src="js/animations.js"></script>
+<script src="js/send_mail.js"></script>
 
 </html>
