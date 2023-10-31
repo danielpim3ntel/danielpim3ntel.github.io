@@ -618,7 +618,7 @@ a.button:hover {
   display: flex;
   align-items: center;
   padding: 10px 20px;
-  width: 332px;
+  width: 337px;
   position: relative;
   transform: translateX(100%);
   animation: move-left 0.5s linear forwards, move-right 0.5s linear forwards 2s;
