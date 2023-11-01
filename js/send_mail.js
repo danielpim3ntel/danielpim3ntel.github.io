@@ -65,6 +65,8 @@ const showToast = (msg) => {
 
   if (msg === successMsg) {
     toast.classList.add('check')
+  } else if (msg === sendingMsg) {
+    toast.classList.add('sending')
   } else {
     toast.classList.add('error')
   }
