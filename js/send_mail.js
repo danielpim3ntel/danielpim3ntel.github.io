@@ -11,6 +11,7 @@ let reCaptchaToken = ''
 const toastBox = document.getElementById('toast-box')
 
 const successMsg = "<i class='bx bx-check'></i>¡Correo enviado correctamente!"
+const sendingMsg = "<i class='bx bx-time'></i>¡Enviando correo!"
 const errorMsg = "<i class='bx bx-x'></i>¡Error al enviar correo!"
 // let missingCaptcha = `<i class='bx bx-x'></i>¡Por favor complete el captcha!`;
 
@@ -40,6 +41,7 @@ const sendMail = () => {
   }
   // console.log(templateParams);
 
+  showToast(sendingMsg)
   emailjs.send('service_41ro1p5', 'template_m7ge1e5', templateParams).then(
     (response) => {
       //console.log('SUCCESS!', response.status)
