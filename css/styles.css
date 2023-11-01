@@ -640,6 +640,10 @@ a.button:hover {
   background-color: green;
 }
 
+.toast.sending {
+  background-color: blue;
+}
+
 .toast.error {
   background-color: red;
 }
